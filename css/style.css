@@ -1,0 +1,203 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+}
+.header .search {
+    margin: 0 0 0 50px;
+}
+.header .gnb {
+    margin: 0 0 0 auto;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 30px;
+}
+.header .gnb ul li {
+    position: relative;
+}
+.header .gnb ul li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -18px;
+    transform: translate(0, -50%);
+    width: 1px;
+    height: 14px;
+    background: #ddd;
+}
+.header .gnb ul li a {
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+.header .gnb ul li a:hover {
+    color: #6C801A;
+    border-bottom: 2px solid #6C801A;
+}
+
+.header .search i {
+    font-size: 24px;
+}
+
+/* 메인 비주얼 */
+.mainVisual {
+    position: relative;
+}
+
+.mainVisual .mainSlide figure {
+    position: relative;
+    height: 600px;
+}
+
+.mainVisual .mainSlide .itm01 {
+    background: url(../images/visual01.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm02 {
+    background: url(../images/visual02.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .itm03 {
+    background: url(../images/visual03.jpg) no-repeat center center/cover;
+}
+
+.mainVisual .mainSlide .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1200px;
+    transform: translate(-50%, -50%);
+}
+
+.mainVisual .mainSlide .slogan strong {
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 55px;
+}
+
+.mainVisual .mainSlide .slogan p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+/* 슬라이드 위치 표시 */
+.mainVisual .slick-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.mainVisual .slick-dots li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.mainVisual .slick-dots li button {
+    font-size: 0;
+    width: 60px;
+    height: 4px;
+    background: #333;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.mainVisual .slick-dots li.slick-active button {
+    background: #6C801A;
+    cursor: pointer;
+}
+
+/* 좌우 버튼 */
+.mainVisual .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1500px;
+    color: #f8f9fa;
+}
+.mainVisual .arrows .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.mainVisual .arrows .left i {
+    font-size: 30px;
+    padding: 10px 25px 10px 25px;
+    background: rgba(0, 0, 0, 0.3);
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+.mainVisual .arrows .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.mainVisual .arrows .right i {
+    font-size: 30px;
+    padding: 10px 25px 10px 25px;
+    background: rgba(0, 0, 0, 0.3);
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+
+/* 메뉴 */
+.meue {
+    padding: 100px 0;
+    text-align: center;
+}
+.meue .txtBox {
+    margin: 0 auto 30px auto;
+}
+.meue h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.meue p {
+    font-size: 18px;
+}
+
+.menuBox {
+    display: flex;
+    gap: 30px;
+}
+
+.menuBox .box {
+    border-radius: 25px;
+    overflow: hidden;
+}
+.menuBox .box img:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+
+/* 푸터 */
+.footer {
+    height: 130px;
+    color: #f8f9fa;
+    background: #343a40;
+}
+
+.footer p {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer address {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 35px;
+}
